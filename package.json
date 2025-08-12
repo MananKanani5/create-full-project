@@ -8,6 +8,14 @@
   "license": "MIT",
   "preferGlobal": true,
   "author": "Manan Kanani",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MananKanani5/create-full-project.git"
+  },
+  "homepage": "https://github.com/MananKanani5/create-full-project#readme",
+  "bugs": {
+    "url": "https://github.com/MananKanani5/create-full-project/issues"
+  },
   "dependencies": {
     "chalk": "^5.4.1",
     "commander": "^14.0.0",
