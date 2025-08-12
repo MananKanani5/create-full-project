@@ -1,0 +1,35 @@
+{
+  "name": "create-full-project",
+  "version": "1.0.2",
+  "description": "A CLI to quickly scaffold a full-stack app with Next.js, Tailwind CSS, Express, Prisma, and TypeScript — ready in seconds.",
+  "bin": {
+    "create-full-project": "bin/index.js"
+  },
+  "license": "MIT",
+  "preferGlobal": true,
+  "author": "Manan Kanani",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^14.0.0",
+    "execa": "^9.6.0",
+    "fs-extra": "^11.3.0"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "cli",
+    "fullstack",
+    "express",
+    "nextjs",
+    "tailwindcss",
+    "prisma",
+    "typescript",
+    "scaffold",
+    "starter"
+  ]
+}
