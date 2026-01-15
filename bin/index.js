@@ -25,8 +25,8 @@ program
     fs.ensureDirSync(path.join(root, "frontend"));
     fs.ensureDirSync(path.join(root, "backend"));
 
-    await setupFrontend(root);
     await setupBackend(root);
+    await setupFrontend(root);
     
     console.log(chalk.green("╔════════════════════════════════════════════╗"));
     console.log(chalk.green("║   ✅ Project Created Successfully!         ║"));
