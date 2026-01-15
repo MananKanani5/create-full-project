@@ -15,14 +15,31 @@ program
   .argument("<project-name>")
   .action(async (projectName) => {
     const root = path.resolve(projectName);
+    
+    console.log(chalk.cyan("\n╔════════════════════════════════════════════╗"));
+    console.log(chalk.cyan("║   Create Full-Stack App CLI               ║"));
+    console.log(chalk.cyan("╚════════════════════════════════════════════╝"));
+    console.log(chalk.blue(`\n📁 Creating project: ${chalk.bold(projectName)}\n`));
+    
     fs.ensureDirSync(root);
     fs.ensureDirSync(path.join(root, "frontend"));
     fs.ensureDirSync(path.join(root, "backend"));
 
-    console.log(chalk.blue(`\n📁 Creating ${projectName}...`));
     await setupFrontend(root);
     await setupBackend(root);
-    console.log(chalk.green("\n✅ Done! Happy coding.\n"));
+    
+    console.log(chalk.green("╔════════════════════════════════════════════╗"));
+    console.log(chalk.green("║   ✅ Project Created Successfully!         ║"));
+    console.log(chalk.green("╚════════════════════════════════════════════╝"));
+    console.log(chalk.cyan("\n📂 Next steps:\n"));
+    console.log(chalk.gray(`   cd ${projectName}`));
+    console.log(chalk.gray("   \n   Backend:"));
+    console.log(chalk.gray("   cd backend"));
+    console.log(chalk.gray("   npm run dev"));
+    console.log(chalk.gray("   \n   Frontend (in another terminal):"));
+    console.log(chalk.gray("   cd frontend"));
+    console.log(chalk.gray("   npm run dev"));
+    console.log(chalk.cyan("\n🎉 Happy coding!\n"));
   });
 
 program.parse();
