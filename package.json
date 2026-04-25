@@ -1,6 +1,6 @@
 {
   "name": "create-full-project",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "A CLI to quickly scaffold a full-stack app with Next.js, Tailwind CSS, Express, Prisma, and TypeScript — ready in seconds.",
   "bin": {
     "create-full-project": "bin/index.js"
