@@ -1,7 +1,7 @@
 Scaffold a production-ready full-stack JavaScript app in seconds — instead of spending 2–3 hours wiring everything together yourself.
 
 ```bash
-npx -y create-full-project@latest my-app
+npx -y create-full-project my-app
 ```
 
 That's it. You get a `backend/` and `frontend/` folder, fully configured and ready to run.
@@ -21,7 +21,7 @@ Everything is already set up: folder structure, security middleware, pagination 
 
 ```bash
 # 1. Scaffold the project
-npx -y create-full-project@latest my-app
+npx -y create-full-project my-app
 
 # 2. Set your database URL in backend/.env
 DATABASE_URL="postgres://username:password@host:port/db_name"
