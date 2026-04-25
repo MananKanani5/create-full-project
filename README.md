@@ -1,5 +1,3 @@
-# create-full-project
-
 Scaffold a production-ready full-stack JavaScript app in seconds — instead of spending 2–3 hours wiring everything together yourself.
 
 ```bash
